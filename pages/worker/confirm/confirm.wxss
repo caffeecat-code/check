@@ -1,0 +1,107 @@
+
+@import "/styles/style.wxss";
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.container .box{
+  width: 100%;
+  font-size: 30rpx;
+}
+.container .box .row{
+  display:flex;
+  align-items:center;
+  padding:20rpx 0rpx;
+  border-bottom:1rpx solid #D0D0D0;
+  margin-top:10rpx
+}
+.container .box .row image{
+  width:33rpx;
+  height:46rpx;
+  margin-right:20rpx
+}
+.container .box .row image.code{
+  width:40rpx;
+  height:46rpx
+}
+.container .box .row textarea{
+  flex:1;
+  padding:0 10rpx;
+  font-size:28rpx;
+  min-height:100rpx ;
+  height: 100rpx;
+  color:#000000;
+  border:1px solid #ccc;
+}
+.container .box .row .btn{
+  padding: 0;
+  width:161rpx;
+  height:53rpx;
+  line-height:50rpx;
+  border:1rpx solid #A0B8B2;
+  text-align:center;
+  font-size:24rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:#0396FF;
+}
+.button{
+  margin:100rpx auto 0;
+  width:626rpx;
+  height:84rpx;
+  line-height:84rpx;
+  background:linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);border-radius:42rpx;
+  text-align:center;
+  font-size:32rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:#FFFFFF;
+}
+.select{
+/* background-color: aquamarine; */
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-top: 30rpx;
+}
+.select #select{
+width: 45%;
+margin-left: 10rpx;
+}
+
+/* 提交图片样式 */
+/*画廊*/
+.gallery {    
+  /*margin-bottom: 100rpx;*/
+  display: flex;    
+  justify-content: flex-start;  
+  flex-direction: row;  
+  flex-wrap: wrap;
+  width: 95%;
+  /* height: 100rpx; */
+}
+/*每张图片所占容器*/
+.item {    
+  width: 23%;
+  margin: 1%;
+  position: relative;    
+}
+.item image{
+  width: 100%;
+  height: 150rpx;
+}
+/*删除按钮*/
+.delete {    
+  position: absolute;   
+  bottom: 0;
+  height: 40rpx; 
+  width: 100%; 
+  background: #ccc;    
+  opacity: .8;
+}
+.delete image {    
+  position: absolute;  
+  left: 50rpx;  
+  width: 40rpx;   
+  height: 40rpx;
+}

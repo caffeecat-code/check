@@ -1,0 +1,18 @@
+<view class = "main">
+  <view class = "row">
+    <view class = "des">编号</view>
+    <view class = "sore">{{id}}</view>
+  </view>
+  <view class = "row">
+    <view class = "des">权限</view>
+    <view class = "sore">{{userType[perm]}}</view>
+  </view>
+  <view class = "row">
+    <view class = "des">手机号码</view>
+    <view class = "sore">{{phone}}</view>
+  </view>
+  <view class = "row">
+    <view class = "des">密码</view>
+    <view class = "sore">******</view>
+  </view>
+</view>

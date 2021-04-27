@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加生活区队长",
+  "usingComponents": {
+    "select":"/components/select/index"
+  }
+}

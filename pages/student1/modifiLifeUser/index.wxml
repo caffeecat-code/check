@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="box">
+    <view class="row">
+      <view>学号:</view>
+      <input type="number" maxlength="11" bindinput ="inputId" placeholder="{{id}}" disabled="true"/>
+    </view>
+    <view class="row">
+      <view>姓名:</view>
+      <input type="text" maxlength="11" bindinput ="inputName" placeholder="{{name}}"/>
+    </view>
+    <view class="select">
+      <view>系部:</view>
+      <select id="select" options="{{options}}" key="role_id" text="role_name" 
+      bind:change="changeDept" defaultOptionTemp="{{curType1}}"></select>
+    </view>
+    <view class="select">
+        <view>年级:</view>
+        <select id="select" options="{{options2}}" key="role_id" text="role_name" 
+        bind:change="changeGrade"
+        defaultOptionTemp="{{curType2}}"></select>
+    </view>
+    <view class="row">
+      <view>班级:</view>
+      <input type="text" maxlength="11" bindinput ="inputClass" placeholder="{{classes}}"/>
+    </view>
+    <view class="row">
+      <view>手机号:</view>
+      <input type="number" maxlength="11" bindinput ="inputPhone" placeholder="{{phone}}"/>
+    </view>
+  </view>
+  <view class="button" bindtap="submit" hover hover-class="wsui-btn__hover_btn">添加</view>
+</view>
+

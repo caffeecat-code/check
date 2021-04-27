@@ -1,0 +1,62 @@
+<loading hidden="{{hidden}}">
+        加载中...
+</loading>
+<view class="page">
+  <view class="sel">
+    <view class="zi">
+      <view>维修:</view>
+      <view class="select">
+        <select id="select" options="{{options1}}" key="role_id" text="role_name" bind:change="change1"></select>
+      </view>
+    </view>
+    <view class="zi">
+      <view>预警:</view>
+      <view class="select">
+        <select id="select" options="{{options2}}" key="role_id" text="role_name" bind:change="change2"></select>
+      </view>
+    </view> 
+  </view>  
+  <view class="sel">
+    <!-- 时间段 -->  
+    <view class="picker_group"> 
+      <view>开始时间：</view> 
+      <picker mode="date" value="{{date}}"   start="{{1990-1-1}}" end="{{nowDate}}" bindchange="bindDateChange">  
+        <view class="picker">  
+          {{date}}  
+        </view>  
+      </picker>        
+    </view>  
+    <view class = "addUser" bindtap="submit" hover hover-class="wsui-btn__hover_btn">查询</view>
+  </view>
+</view>  
+<view class="container">
+    <view class="group">
+        <view class="group-title">工单预警</view>
+        <!-- <view class="group-explain">维修人员展示用例。</view> -->
+        <view class="table-wrap">
+            <table  
+                headers="{{tableHeader}}" 
+                data="{{ row }}" 
+                bind:delClick="onDelClick"
+                bind:changeClick="onChangeClick"
+                pageType="444"
+                header-row-class-name="header-class"
+                data="{{ row }}" 
+                stripe="{{ stripe }}"
+                border="{{ border }}"
+            />
+        </view>
+    </view>
+    <view class = "mainBtn" form-type="submit" size="mini" bindtap="showPage" hover hover-class="wsui-btn__hover_btn">更多</view>
+</view>
+<!-- loadT -->
+<view wx:if="{{loadT}}">
+    <!-- curPage show changePage -->
+    <pageInfo  max_page="{{max_page}}" page ="{{curPage}}" show="{{show}}" bind:selectPage="changePage">
+    </pageInfo>
+</view>
+
+
+
+
+

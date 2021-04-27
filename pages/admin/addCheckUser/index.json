@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加维修人员",
+  "usingComponents": {
+    "select":"/components/select/index"
+  }
+}

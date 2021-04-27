@@ -1,0 +1,18 @@
+/* 模拟按钮被点击效果 */
+.wsui-btn__hover_btn {
+  opacity: 0.9;
+  transform: scale(0.95, 0.95);
+  position: relative;
+  top: 3rpx;
+  left: 3rpx;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, .1) inset; 
+}
+/* 全局表格头样式 */
+.header-class {
+  border: 1rpx solid #99CCFF;
+  background-color: #99CCFF;
+  color: #fff!important;
+}
+.header-class .td:first-child {
+  color: #99CCFF;
+}

@@ -1,0 +1,27 @@
+<block wx:if="{{show}}">
+<view class='page-list'>
+  <view class='page-list-cont'>
+    <view class='page-top'>
+        <view class='page-top-x' catchtap='selectPage' data-id='1'>首页</view>
+        <view class='page-top-t'>翻页</view>
+        <view class='page-top-x' catchtap='selectPage' data-id='{{max_page}}'>末页</view>
+    </view>
+    <view class='page-scroll-view'>
+        <scroll-view class="scroll-view_H" scroll-x style="width: 100%;white-space: nowrap; display: block;box-sizing: border-box;padding: 0rpx;">
+            <block wx:for="{{page_lists}}" wx:key="page_lists">
+              <view class="page-sv-select {{page_select==index ? 'page-sv-select-x':''}}" catchtap='setPageSelect' data-in='{{index}}'>{{item.text}}</view>
+            </block>
+        </scroll-view>
+    </view>
+    <view class='page-sv-item'>
+        <block wx:for="{{page_lists[page_select].data}}" wx:key="page-items">
+          <view class="page-sv-item-v {{index%2==0 ? 'bg-f2' : 'bg-f9'}}">
+              <view class="page-sv-item-v-i {{page==fy?'page-sv-item-v-s':''}}" wx:for="{{item}}" wx:for-item="fy" wx:key="fy-{{index}}" catchtap='selectPage' data-id='{{fy}}'>
+                  <text>{{fy < 10 ? '0'+fy : fy}}</text>
+              </view>
+          </view>
+        </block>
+    </view>
+  </view>
+</view>
+</block>

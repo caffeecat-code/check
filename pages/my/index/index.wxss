@@ -1,0 +1,26 @@
+/* pages/my/index.wxss */
+page {
+  background: #F3F3F3;
+}
+.main{
+  width: 100%;
+  margin: 0 auto;
+  
+}
+.main .row{
+  margin-bottom: 5rpx;
+  background-color: white;
+  height: 80rpx;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.main .row .des{
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+.main .row .sore{
+  font-size: 30rpx;
+  margin-right: 30rpx;
+  color: #ccc;
+}

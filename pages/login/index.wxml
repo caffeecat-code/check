@@ -1,0 +1,21 @@
+<view class = "main">
+    <view class="login_text" selectable="false" space="false" decode="false">
+        <text>登录</text>
+    </view>
+    <!-- 表单 -->
+    <form class="form"  bindsubmit = "formSubmit">
+        <view class = "my_select">
+            <select id="select" options="{{options}}" key="role_id" text="role_name" bind:change="change"></select>
+        </view>
+        <view class = "input">
+            <text class = "iconfont icon-xingmingyonghumingnicheng icon"></text>
+            <input class="username" name = "username" type="number" placeholder="手机号码" />
+        </view>
+        <view class = "input">
+            <text class = "iconfont icon-mima icon"></text>
+            <input class="password" name = "password" type="password" password="false" placeholder="密码" />
+        </view>
+        <button class = "login" form-type="submit"  hover hover-class="wsui-btn__hover_btn btn">登录</button>
+    </form>      
+</view>
+  

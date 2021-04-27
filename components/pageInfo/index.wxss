@@ -1,0 +1,85 @@
+/* 分页 */
+.page-list{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.page-list-cont{
+  width: 100%;
+  background: #fff;
+  font-size: 30rpx;
+}
+.page-top{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 4rpx;
+  height: 100rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+.page-top-x{
+  width: 16%;
+  text-align: center;
+  color: #0396FF;
+  font-size: 31rpx;
+}
+.page-top-t{
+  width: 68%;
+  text-align: center;
+  font-size: 33rpx;
+  font-weight: bold;
+}
+
+.page-sv-select{
+  display: inline-block;
+  height: 78rpx;
+  line-height: 78rpx;
+  width: 188rpx;
+  text-align: center;
+  color: #333;
+  border-bottom: 5rpx solid #fff;
+}
+.page-sv-select-x{
+  border-bottom: 5rpx solid #0396FF;
+  font-weight: bold;
+}
+.page-sv-item{
+  width: 100%;
+}
+.page-sv-item-v{
+  width: 100%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+.page-sv-item-v-i{
+  width: 20%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.page-sv-item-v-s text{
+  height: 80rpx;
+  width: 80rpx;
+  background: #0396FF;
+  display: inline-block;
+  border-radius: 50%;
+}
+.bg-f2{
+  background: #f2f2f2;
+}
+.bg-f9{
+  background: #f9f9f9;
+}

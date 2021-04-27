@@ -1,0 +1,65 @@
+{
+  "pages":[
+    "pages/login/index",
+    "pages/admin/workerDeliveer/index",
+    "pages/admin/delivererAll/index",
+    "pages/admin/addLifeMinister2/index",
+    "pages/admin/addLifeMinister/index",
+    "pages/admin/addCheckUser/index",
+    "pages/admin/modifiLifeMinister2/index",
+    "pages/admin/modifiLifeMinister/index",
+    "pages/admin/modifiUser/index",
+    "pages/admin/order/OrderSelectFinish/index",
+    "pages/admin/order/warnOrderSelect/index",
+    "pages/admin/order/selectOrder/index",
+    "pages/admin/lifeMinisterSelect2/index",
+    "pages/admin/lifeMinisterSelect/index",
+    "pages/admin/workerSelectAllNoPage/index",
+    "pages/admin/workerSelectAll/index",
+    "pages/my/changePassword/index",
+    "pages/my/changePhone/index",
+    "pages/test/index",
+    "pages/my/index/index",
+    "pages/admin/warnTimeSet/index",
+    "pages/index/index",
+    "pages/student1/addLifeUser/index",
+    "pages/student1/modifiLifeUser/index",
+    "pages/student1/lifeUser/index",
+    "pages/student1/lifeUserworkOrder/index",    
+    "pages/student2/addOrder/addOrder",
+    "pages/student2/classOrder/classOrder",
+    "pages/student2/maintaining/maintaining",
+    "pages/worker/confirm/confirm",
+    "pages/worker/historyOrder/historyOrder",
+    "pages/worker/maintaining/maintaining"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#c1c1c1",
+    "selectedColor": "#6e8cfa",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/home-o.png"
+      },{
+        "pagePath": "pages/my/index/index",
+        "text": "我的",
+        "iconPath": "images/icons/my.png",
+        "selectedIconPath": "images/icons/my-o.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

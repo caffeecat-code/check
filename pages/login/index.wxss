@@ -1,0 +1,80 @@
+/* pages/login/index.wxss */
+@import "/styles/iconfont.wxss";
+@import "/styles/style.wxss";
+.main .login_text{
+    margin-top: 100rpx;
+    font-size: 60rpx;
+    font-family: "SourceHanSansSC";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.main .login_text:after{
+    content: "";
+    display: block;
+    width: 200rpx;
+    height: 11rpx;
+    /* background-image: -moz-linear-gradient( -178deg, rgb(66,229,123) 0%, rgb(66,233,125) 25%, rgb(55,249,214) 100%);
+    background-image: -webkit-linear-gradient( -178deg, rgb(66,229,123) 0%, rgb(66,233,125) 25%, rgb(55,249,214) 100%);
+    background-image: -ms-linear-gradient( -178deg, rgb(66,229,123) 0%, rgb(66,233,125) 25%, rgb(55,249,214) 100%);
+   */
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    z-index: 4; 
+}
+.main .login_text text{
+    display: inline-block;
+    width: 200rpx;
+    text-align: right;
+}
+.main .form{
+    font-size: 30rpx;
+    display:block;
+    width: 80%;
+    margin:0 auto;
+    margin-top: 180rpx;
+}
+.main .form .input{
+    border-bottom:1px solid #e6e6e6;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    height:80rpx;
+}
+.main .form .input .icon{
+    font-size: 32rpx;
+    color: #ccc;
+    width: 50rpx;
+    display: inline-block;
+}
+.main .form .username{
+    display:inline-block;
+}
+.main .form .input:nth-last-child(1){
+    margin-top: 40rpx;
+}
+/* 登录样式 */
+.main .form .login{
+    font-size: 30rpx;
+    margin-top: 100rpx;
+    /* background-image: -moz-linear-gradient( -178deg, rgb(66,229,123) 0%, rgb(66,233,125) 25%, rgb(55,249,214) 100%);
+    background-image: -webkit-linear-gradient( -178deg, rgb(66,229,123) 0%, rgb(66,233,125) 25%, rgb(55,249,214) 100%);
+    background-image: -ms-linear-gradient( -178deg, rgb(66,229,123) 0%, rgb(66,233,125) 25%, rgb(55,249,214) 100%);
+   */
+   background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    width: 100%; 
+    border-radius: 50rpx;
+    height: 100rpx;
+    line-height:60rpx;
+}
+.main .else{
+    margin-top: 50rpx;
+    font-size: 30rpx;
+    text-align: right;
+}
+.main .else .more{
+    margin-right: 20rpx;
+    color: #0396FF;
+}
+.main .form .my_select{
+    margin-bottom: 50rpx;
+    width: 50%;
+}

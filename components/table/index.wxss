@@ -1,0 +1,119 @@
+
+.table {
+  position: relative;
+  font-size: 28rpx;
+  background: #fff;  
+  border-right:none;
+  border-radius: 8rpx;  
+  overflow: hidden;
+}
+.thead{
+  border-bottom: none;
+  display: flex;
+  justify-content: flex-start;
+  border-top-right-radius: 8rpx;
+  border-top-left-radius: 8rpx;
+  overflow: visible;
+  color: #909399;
+  border: 1px solid #ebeef5;
+  box-sizing: border-box;
+}
+.thead .td {
+  padding: 20rpx 10rpx;
+  font-weight: bold;
+  display: inline-block;   
+  white-space:nowrap; 
+  text-align: center;
+  padding:20rpx 2rpx;
+  border-right: 1rpx solid #ccc;
+}
+.thead .td:last-child {
+  border-right: none;
+}
+.thead-border .td {
+  border-right: 1rpx solid #ebeef5;
+  
+}
+.thead-border .td:last-child {
+  border-right: none;
+}
+/* .tr{
+  display: flex;
+  white-space:nowrap; 
+} */
+.tbody {
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #666;
+  border: 1px solid #ebeef5;
+  border-top: none;
+  border-bottom-left-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+}
+.tbody-tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebeef5;
+}
+.tbody-tr:last-child {
+  border-bottom-left-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+}
+
+.tbody-tr-stripe {
+  background: #fff;
+  
+  border-bottom: none;
+}
+.tbody-tr-stripe:nth-child(2n) {
+  background: #F6F6F6;
+}
+.tbody-tr .td {
+  white-space: wrap;
+  padding:20rpx 2rpx;
+  text-align: center;
+  border-right: 1rpx solid #ccc;
+}
+.btn{
+  margin-top: 10rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+  border:1rpx solid #A0B8B2;
+  text-align:center;
+  font-size:24rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:#0396FF;
+  display:inline-block !important; 
+  /* //display:inline;  */
+}
+.btn2{
+  margin-top: 10rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+  border:1rpx solid #A0B8B2;
+  text-align:center;
+  font-size:24rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:#ccc;
+  display:inline-block !important; 
+  /* //display:inline;  */
+}
+.tbody-tr-border .td {
+  border-right: 1rpx solid #F6F6F6;
+}
+.tbody-tr-border .td:last-child {  
+  border-right: none;
+}
+.no-data {
+  display: flex;
+  padding: 50rpx;
+  color: #666;
+  justify-content: center;
+}
+.modal{
+  background-color: #fff;
+}

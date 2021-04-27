@@ -1,0 +1,27 @@
+<loading hidden="{{hidden}}">
+        加载中...
+</loading>
+<view class="container">
+    <view class="group">
+        <view class="group-title">正在维修</view>
+        <!-- <view class="group-explain">维修人员展示用例。</view> -->
+        <view class="table-wrap">
+            <table  
+                headers="{{tableHeader}}" 
+                data="{{ row }}" 
+                bind:delClick="onDelClick"
+                bind:changeClick="onChangeClick"
+                bind:pictureClick="onPictureClick"
+                bind:pictureClick2="onPictureClick2"
+                bind:onConfirmClick="onConfirmClick"
+                imgsFileIDs="{{imgsFileIDs}}"
+                imgsFileIDs2="{{imgsFileIDs2}}"
+                pageType="1111"
+                header-row-class-name="header-class"
+                data="{{ row }}" 
+                stripe="{{ stripe }}"
+                border="{{ border }}"
+            />
+        </view>
+    </view>
+</view>

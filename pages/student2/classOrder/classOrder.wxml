@@ -1,0 +1,65 @@
+<loading hidden="{{hidden}}">
+        加载中...
+</loading>
+<view class="container">
+    <view class="group">
+        <view class="group-title">区队工单</view>
+        <!-- <view class="group-explain">维修人员展示用例。</view> -->
+        <view class="table-wrap">
+            <table  
+                headers="{{tableHeader}}" 
+                data="{{ row }}" 
+                bind:delClick="onDelClick"
+                bind:changeClick="onChangeClick"
+                bind:pictureClick="onPictureClick"
+                bind:pictureClick2="onPictureClick2"
+                imgsFileIDs="{{imgsFileIDs}}"
+                imgsFileIDs2="{{imgsFileIDs2}}"
+                pageType="111"
+                header-row-class-name="header-class"
+                data="{{ row }}" 
+                stripe="{{ stripe }}"
+                border="{{ border }}"
+            />
+        </view>
+    </view>
+</view>
+<!-- pages/student2/classOrder/classOrder.wxml
+
+<view>
+  <view wx:for="{{orders}}" wx:for-index="Index">
+    <view>
+      工单编号：{{item.id}}
+    </view>
+    <view>
+      维修类别：{{item.type}}
+    </view>
+    <view>
+      维修原因：{{item.reason}}
+    </view>
+    <view>
+      维修地址：{{item.address}}
+    </view>
+    <view>
+      提交时间：{{item.startTime}}
+    </view>
+    <view>
+      当前状态：{{item.condi}}
+    </view>
+    <view>
+      更新时间：{{item.endTime}}
+    </view>
+    <view wx:if="{{item.imgsFileIDs.length!=0&&item.imgsFileIDs!=null}}">
+      <button bindtap="lookImg" data-index="{{Index}}">查看申报图片</button>
+    </view>
+    <view wx:else>
+      <button disabled="true">未提交申报图片</button>
+    </view>
+    <view wx:if="{{item.imgsFileIDs2.length!=0&&item.imgsFileIDs2!=null}}">
+      <button bindtap="lookImg2" data-index="{{Index}}">查看完成图片</button>
+    </view>
+    <view wx:else>
+      <button disabled="true">未提交完成图片</button>
+    </view>
+  </view>
+</view> -->

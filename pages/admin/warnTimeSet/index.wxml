@@ -1,0 +1,45 @@
+
+<loading hidden="{{hidden}}">
+        修改中...
+</loading>
+<view class="container">
+    <view class="group">
+        <view class="group-title">预警时间设置</view>
+    </view>
+    <view class="wrap">
+    <view class="person">
+    <view class="personNum">
+        <view class="text">蓝色预警天数：</view>
+        <view class="outer">
+            <view class="minus" bindtap="minusAdultNum">—</view>
+            <view class="num">{{adultNum}}</view>
+            <view class="plus" bindtap="plusAdultNum">+</view>
+        </view>
+    </view>
+
+    <view class="personNum ml-30">
+        <view class="text">黄色预警天数：</view>
+        <view class="outer">
+        <view class="minus" bindtap="minusChildNum">—</view>
+        <view class="num">{{childNum}}</view>
+        <view class="plus" bindtap="plusChildNum">+</view>
+        </view>
+    </view>
+
+    <view class="personNum ml-30">
+        <view class="text">红色预警天数：</view>
+        <view class="outer">
+        <view class="minus" bindtap="minusThreeNum">—</view>
+        <view class="num">{{threeNum}}</view>
+        <view class="plus" bindtap="plusThreeNum">+</view>
+        </view>
+    </view>
+</view>
+
+    <button class = "mainBtn " hover hover-class="wsui-btn__hover_btn" bindtap="submit">设置</button>
+    </view>
+</view>
+
+
+
+

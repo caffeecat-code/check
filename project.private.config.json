@@ -1,0 +1,150 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "login",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/index",
+          "pathName": "pages/test/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/index",
+          "pathName": "pages/my/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "修改号码",
+          "pathName": "pages/my/changePhone/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "修改密码",
+          "pathName": "pages/my/changePassword/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/workerSelectAll/index",
+          "pathName": "pages/admin/workerSelectAll/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "生活部部长信息",
+          "pathName": "pages/admin/lifeMinisterSelect/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "生活区队长",
+          "pathName": "pages/admin/lifeMinisterSelect2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/order/selectOrder/index",
+          "pathName": "pages/admin/order/selectOrder/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "工单查询",
+          "pathName": "pages/admin/order/selectOrderById/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "修改工单信息",
+          "pathName": "pages/admin/modifiUser/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "添加维修人员用户",
+          "pathName": "pages/admin/addCheckUser/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "添加生活部部长",
+          "pathName": "pages/admin/addLifeMinister/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "维修工人完成",
+          "pathName": "pages/admin/workerSelectAllNoPage/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "派单",
+          "pathName": "pages/admin/delivererAll/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "预警",
+          "pathName": "pages/admin/order/warnOrderSelect/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "工单完成率",
+          "pathName": "pages/admin/order/OrderSelectFinish/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/student2/addOrder/addOrder",
+          "pathName": "pages/student2/addOrder/addOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "区队工单",
+          "pathName": "pages/student2/classOrder/classOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/worker/confirm/confirm",
+          "pathName": "pages/worker/confirm/confirm",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/warnTimeSet/index",
+          "pathName": "pages/admin/warnTimeSet/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

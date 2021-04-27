@@ -1,0 +1,11 @@
+
+{
+  "usingComponents": {
+    "select":"/components/select/index",
+    "table": "/components/table/index",
+    "pageInfo":"/components/pageInfo/index"
+  },
+  "navigationBarTitleText": "工单查询",
+  "onReachBottomDistance": 50,
+  "backgroundTextStyle": "dark"
+}

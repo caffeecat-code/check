@@ -1,0 +1,40 @@
+
+<loading hidden="{{hidden}}">
+        加载中...
+</loading>
+<view class="container">
+    <view class="group">
+        <view class="group-title">工单指派</view>
+        <!-- <view class="group-explain">维修人员展示用例。</view> -->
+        <view class="table-wrap">
+            <table  
+                headers="{{tableHeader}}" 
+                data="{{ row }}" 
+                bind:delClick="onDelClick"
+                bind:changeClick="onChangeClick"
+                bind:delivererClick="onDelivererClick"
+                bind:pictureClick="onPictureClick"
+                bind:pictureClick2="onPictureClick2"
+                imgsFileIDs="{{imgsFileIDs}}"
+                imgsFileIDs2="{{imgsFileIDs2}}"
+                pageType="777"
+                conType="777"
+                header-row-class-name="header-class"
+                data="{{ row }}" 
+                stripe="{{ stripe }}"
+                border="{{ border }}"
+            />
+        </view>
+    </view>
+    <view class = "mainBtn" form-type="submit" size="mini" bindtap="showPage" hover hover-class="wsui-btn__hover_btn">更多</view>
+</view>
+<!-- loadT -->
+<view wx:if="{{loadT}}">
+    <!-- curPage show changePage -->
+    <pageInfo  max_page="{{max_page}}" page ="{{curPage}}" show="{{show}}" bind:selectPage="changePage">
+    </pageInfo>
+</view>
+
+
+
+

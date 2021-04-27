@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "table": "../../../components/table/index",
+    "pageInfo":"/components/pageInfo/index"
+  },
+  "navigationBarTitleText": "维修用户",
+  "onReachBottomDistance": 50,
+  "backgroundTextStyle": "dark"
+}

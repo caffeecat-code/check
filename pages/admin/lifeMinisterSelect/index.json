@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "table": "../../../components/table/index",
+    "pageInfo":"/components/pageInfo/index"
+  }
+}

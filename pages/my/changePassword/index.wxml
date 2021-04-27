@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="box">
+    <view class="row">
+      <image class = "iconfont icon-xingmingyonghumingnicheng"></image>
+      <input type="text" maxlength="11" bindinput ="userPassword" placeholder="请输入新密码"/>
+    </view>
+    <view class="row">
+      <image class = "iconfont icon-xingmingyonghumingnicheng"></image>
+      <input type="text" maxlength="11" bindinput ="userPassword" placeholder="确认密码"/>
+    </view>
+    <view class="row">
+      <image class = "iconfont icon-xingmingyonghumingnicheng code"></image>
+      <input type="text" maxlength="6" placeholder="请输入验证码"/>
+      <button plain class = "btn" bindtap="sendCheck">发送验证码</button>
+    </view>
+  </view>
+  <view class="button" bindtap="submit">修改密码</view>
+</view>

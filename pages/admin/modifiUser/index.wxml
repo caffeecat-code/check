@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="box">
+    <view class="row">
+      <view>编号:</view>
+      <input type="number" maxlength="11" bindinput ="id" placeholder="{{id}}" disabled="true"/>
+    </view>
+    <view class="row">
+      <view>姓名:</view>
+      <input type="text" maxlength="11" bindinput ="userName" placeholder="{{name}}"/>
+    </view>
+    <view class="row">
+      <view>手机号:</view>
+      <input type="number" maxlength="11" bindinput ="userNewPhone" placeholder="{{newPhone}}"/>
+    </view>
+    <view class="select">
+        <view>类别:</view>
+        <select id="select"  
+          options="{{options}}" 
+          key="role_id" text="role_name"
+          bind:change="change"
+          defaultOptionTemp="{{curType}}">
+        </select>
+    </view>
+  </view>
+  <view class="button" bindtap="submit" hover hover-class="wsui-btn__hover_btn">更新</view>
+</view>

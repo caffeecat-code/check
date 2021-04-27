@@ -1,0 +1,44 @@
+
+<loading hidden="{{loadingHidden}}">{{hint}}</loading>
+<view class="container">
+  <view class="box">
+    <view class="row">
+      <view>维修耗材：</view>
+      <textarea type="text" bindinput ="bindConsumable" maxlength = "1000" placeholder="请输入维修耗材"></textarea>
+    </view>
+  </view>
+  <view style="font-size:30rpx">上传维修图片：</view>
+  <view class="gallery">
+    <view class="item" wx:for="{{imgs}}" wx:key="">
+        <image  src=" {{item}}" bindtap="previewImage" mode="aspectFill" />
+        <!-- 删除按钮 -->
+        <view class="delete" bindtap="delete" data-index="{{index}}">
+          <image  src="/images/del.png" />
+        </view>
+    </view>
+    <view class="item">
+        <image src="/images/onload.png" class="button-upload" bindtap="selectImg"></image>
+    </view>
+</view>
+  <!-- <view wx:for="{{imgs}}">
+      <image src="{{item}}"></image>
+  </view> -->
+  <!-- <view class="button" bindtap="selectImg">{{imgBtn}}</view> -->
+  <view class="button" bindtap="confirm" hover hover-class="wsui-btn__hover_btn">提交</view>
+</view>
+
+<!-- pages/worker/confirm/confirm.wxml
+<loading hidden="{{loadingHidden}}">{{hint}}</loading>
+<view>
+  <view>
+    维修耗材：
+    <input type="text" placeholder="请输入维修耗材" bindinput="bindConsumable" value="{{consumable}}"></input>
+  </view>
+  <view>
+    <view wx:for="{{imgs}}">
+      <image src="{{item}}"></image>
+    </view>
+    <button bindtap="selectImg">{{imgBtn}}</button>
+    <button bindtap="confirm" type="primary">提交</button>
+  </view>
+</view> -->
